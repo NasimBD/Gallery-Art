@@ -1,0 +1,159 @@
+@import "reset.css";
+
+body{
+    padding: 0;
+    margin: 0;
+    background-color: hsl(0,0%,5%);
+    color: white;
+}
+header{
+    border-bottom: rgba(250,250,250,0.2) 1px outset;
+    padding: 0;
+    margin: 0;
+}
+
+
+#mainTitle{
+    text-shadow: 2px 2px 2px rgba(250,0,0,0.8);
+}
+
+#subTitle{
+    margin-top: -6px;
+}
+
+
+.btn-dark{
+    box-shadow: inset -3px -3px 8px  hsl(0, 0%, 10%), inset 1px 1px 2px whitesmoke;
+}
+
+.wall{
+    background-color: hsl(0,0%,5%);
+    color: white;
+}
+
+.navbar-dark .navbar-toggler:hover{
+opacity: 0.8;
+}
+
+.formCard{
+    background-color: transparent;
+}
+
+
+#cardTotals  {
+    background-color: transparent;
+    color: black;
+}
+
+
+
+
+
+#contents{
+    right: 50px;
+}
+
+
+
+#emImpo{
+    text-shadow: 1px 1px fuchsia;
+}
+
+.btn-info, .btn-primary{
+    box-shadow: inset -3px -3px 8px  hsl(211, 100%, 33%), inset 1px 1px 2px whitesmoke;
+}
+
+
+.btn-warning {
+    box-shadow: inset -3px -3px 8px darkorange, inset 1px 1px 2px whitesmoke;
+}
+
+#collaFouHou{
+    margin-bottom: -12px;
+}
+
+
+.ornament{
+    animation: slideColorX 700ms forwards;
+    color: transparent;
+    background: linear-gradient(90deg, white, yellow, fuchsia, greenyellow, mediumpurple, crimson, white );
+    background-clip: text;
+}
+@keyframes slideColorX {
+    from {
+        transform: skewX(30deg) translateX(-300px);
+        opacity: 0;
+    }
+    80%{
+        transform: skewX(-30deg) scale(1.6);
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/*------------------------------------------------------- MEDIA*/
+@media screen and (max-width: 576px) {
+    html{
+        font-size: 13px;
+    }
+
+    .navbar-dark .navbar-toggler{
+        border: rgba(255,255,255,.5) 2px solid;
+    }
+
+
+    #mainTitle{
+        margin-bottom: 0.5rem;
+    }
+
+    .thumb{
+        max-width: 80px;
+    }
+
+    .thumbCard{
+        max-width: 50px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 985px){
+    html{
+        font-size: 15px;
+    }
+
+    #mainTitle{
+        margin-bottom: 0.2rem;
+    }
+
+
+    .navbar-dark .navbar-toggler{
+        border: rgba(255,255,255,.7) 2px solid;
+    }
+
+    .thumb{
+        max-width: 120px;
+    }
+
+    .thumbCard{
+        max-width: 100px;
+    }
+}
+
+@media screen and (min-width: 986px) {
+    html {
+        font-size: 16px;
+    }
+
+    #mainTitle{
+        margin-bottom: 0.1rem;
+    }
+
+    .thumb{
+        max-width: 200px;
+    }
+
+    .thumbCard{
+        max-width: 150px;
+    }
+}
